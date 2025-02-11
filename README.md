@@ -43,11 +43,12 @@ Install the required dependencies listed in requirements.txt:
 pip install -r requirements.txt
 ```
 ### Download Models
-The trained models (encoder.keras, scaler.pkl, label_encoders.pkl) are stored in this repository.
+The trained models (encoder.keras, scaler.pkl, label_encoders.pkl, classifer model) are stored in this repository.
 
 ## Accessing the Application
 The application is deployed and accessible via the web. You can access it here:
-Fraud Detection System App
+[Fraud Detection System App](https://fraud-detection-app123.streamlit.app/)
+
 No need to run the application locally—just visit the link to start interacting with the fraud detection system.
 
 ## File Structure
@@ -58,7 +59,7 @@ No need to run the application locally—just visit the link to start interactin
 - `README.md`: This file.
 
 ## Contributing
-We welcome contributions! Feel free to open an issue or create a pull request if you have improvements or bug fixes to share.
+I welcome contributions! Feel free to open an issue or create a pull request if you have improvements or bug fixes to share.
 
 
 
