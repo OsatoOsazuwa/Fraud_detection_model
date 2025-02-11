@@ -12,12 +12,12 @@ scaler = joblib.load("scaler_fixed.pkl")
 encoder = tf.keras.models.load_model("encoder.keras")
 classifier = tf.keras.models.load_model("fraud_classification_09_0.819.keras")  # Loading trained model
 
-# Read the feature names from the file "features.txt"
+# Reading the feature names from the file "features.txt"
 with open("features.txt", "r") as file:
     feature_names = [line.strip() for line in file.readlines()]  # Read each line and strip newline characters
 
 # Get median values from the scaler (use mean if median is unavailable)
-median_values = dict(zip(feature_names, scaler.mean_))  # Approximate with mean if median is unavailable
+median_values = dict(zip(feature_names, scaler.mean_))  
 
 # Streamlit UI
 st.title("🛡️ Fraud Detection System")
@@ -101,7 +101,7 @@ if option == "Manual Input":
             df_input[feature] = median_values.get(feature, 0)
 
     # Scale the input and make predictions
-    input_scaled = scaler.transform(df_input[feature_names])  # Ensure it has 218 features
+    input_scaled = scaler.transform(df_input[feature_names]) 
     input_encoded = encoder.predict(input_scaled)  # Reduces to 32 features
     fraud_probability = classifier.predict(input_encoded)[0][0]
 
