@@ -35,7 +35,7 @@ This project aims to detect fraudulent transactions using a deep learning model 
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/fraud-detection-system.git
+git clone https://github.com/OsatoOsazuwa/Fraud_detection_model.git
 ```
 ### Install Dependencies
 Install the required dependencies listed in requirements.txt:
